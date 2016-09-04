@@ -1,8 +1,9 @@
 <h1>Post List</h1>
+
 <hr>
 <% @posts.each do |post| %>
-<div>
-  <div>
+<div class="row">
+  <div class="well col-md-6">
   <!-- Show post.title and content -->
   <p><%= post.content %></p>
   <span>

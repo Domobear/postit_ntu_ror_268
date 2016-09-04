@@ -1,0 +1,13 @@
+<h1>Post List</h1>
+<hr>
+<% @posts.each do |post| %>
+<div>
+  <div>
+  <!-- Show post.title and content -->
+  <p><%= post.content %></p>
+  <span>
+    <%= link_to "show post", post_path(post)%>
+  </span>
+  </div>
+</div>
+<% end %>
